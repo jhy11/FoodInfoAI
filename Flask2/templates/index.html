@@ -20,10 +20,31 @@
                     <input type="file" value="Upload" name="image">
                 </div>
                 <input type="submit" value="예측 결과">
-                {% if label %}
-                    <span class="result_lable">
-                        {{ label }}
-                    </span>
+                {%if labe%}
+                    <script>
+                    if(labe == "anaak"){
+                    var ret = window.open("./htmls/anaak.html", "anaak", "width=500, height=600,scrollbars=yes,resizable=yes");}
+                    else if (labe == "chokchok"){
+                    var ret = window.open("./htmls/chokchok.html", "chokchok", "width=500, height=600,scrollbars=yes,resizable=yes");}
+                    else if (labe == "coffee"){
+                    var ret = window.open("./htmls/coffee.html", "coffee", "width=500, height=600,scrollbars=yes,resizable=yes");}
+                    else if (labe == "ggobuk"){
+                    var ret = window.open("./htmls/ggobuk.html", "ggobuk", "width=500, height=600,scrollbars=yes,resizable=yes");}
+                    else if (labe == "hotdog"){
+                    var ret = window.open("./htmls/hotdog.html", "hotdog", "width=500, height=600,scrollbars=yes,resizable=yes");}
+                    else if (labe == "hush"){
+                    var ret = window.open("./htmls/hush.html", "hush", "width=500, height=600,scrollbars=yes,resizable=yes");}
+                    else if (labe == "orangejuice"){
+                    var ret = window.open("./htmls/orangejuice.html", "orangejuice", "width=500, height=600,scrollbars=yes,resizable=yes");}
+                    else if (labe == "oreo"){
+                    var ret = window.open("./htmls/oreo.html", "oreo", "width=500, height=600,scrollbars=yes,resizable=yes");}
+                    else if (labe == "pepero"){
+                    var ret = window.open("./htmls/pepero.html", "pepero", "width=500, height=600,scrollbars=yes,resizable=yes");}
+                    else if (labe == "poka"){
+                    var ret = window.open("./htmls/poka.html", "poka", "width=500, height=600,scrollbars=yes,resizable=yes");}
+                    else (labe == "twix"){
+                    var ret = window.open("./htmls/twix.html", "twix", "width=500, height=600,scrollbars=yes,resizable=yes");}
+                    </script>
                 {% endif %}
             </form>
         </div>
