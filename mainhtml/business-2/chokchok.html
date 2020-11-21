@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<!-- Images by various sources under the Creative Commons CC0 license and/or the Creative Commons Zero license. 
+Although you can use them, for a more unique website, replace these images with your own. -->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>제품 상세정보 예측 프로그램</title>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts from Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        .title {
+          text-align: center;
+          font-size: 2.5rem;
+          font-weight: bold;
+        }
+        .subtitle {
+          text-align: center;
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+        .main {
+          width: 800px;
+          margin: 0 auto;
+          margin-top: 50px;
+        }
+    .tg  {border-collapse:collapse;border-spacing:0;width:50%;margin:auto;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-7txj{background-color:#ffdb00;border-color:#680100;color:#ffffff;font-family:"Arial Black", Gadget, sans-serif !important;;
+      text-align:center;vertical-align:top}
+    .tg .tg-38i2{background-color:#986536;border-color:#680100;color:#ffffff;font-family:"Arial Black", Gadget, sans-serif !important;;
+      text-align:center;vertical-align:top}
+    .tg .tg-5muw{background-color:#ffdb00;border-color:#680100;color:#986536;font-family:"Arial Black", Gadget, sans-serif !important;;
+      text-align:center;vertical-align:top}
+        </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                
+                <a class="navbar-brand" href="#">
+                	WHAT'S INN
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+							<li>촉촉한 초코칩</li>
+							<li>Enaak</li>
+                            <li>마일드 커피</li>
+                            <li>꼬북칩</li>
+							<li>핫도그 젤리</li>
+                            <li>허쉬 초코우유</li>
+                            <li>오레오</li>
+							<li>빼빼로</li>
+							<li>포카칩</li>
+							<li>Twix</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+                            <li style="color: gold;">소프트웨어학부</li>
+							<li>심다혜</li>
+							<li>김유정</li>
+							<li>정하영</li>
+						</ul>
+					</li>
+                    
+                </ul>
+                
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+
+	<!-- Header -->
+    <header>
+        <div class="foodtable">
+            <div class="main">
+                <div class="title">
+                  영양성분표
+                </div>
+                <div class="subtitle">
+                  ()안의 수치는 1일 영양성분 기준치에 대한 비율 (2000kcal 기준)
+                  </div>
+          
+          
+          <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-7txj" colspan="4"><img src="https://ww.namu.la/s/c651c35b952a59d6da25132645914563f7845f66b1bb17ce17e8d680181ddfa6721aea317e218b4454f304bb36fe6e0e95af9f35383b0085b04e3c36c6738ba4e86e658f078b6c0ccac021a538895b62bb451fcb9318cfc87800d7fe51ec39c3" alt="Image" width="500" height="400"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-5muw" colspan="4">1회 제공량 20g</td>
+            </tr>
+            <tr>
+              <td class="tg-5muw" colspan="4">열량 102kcal</td>
+            </tr>
+            <tr>
+              <td class="tg-38i2">영양성분</td>
+              <td class="tg-38i2">함량</td>
+              <td class="tg-38i2">영양성분</td>
+              <td class="tg-38i2">함량</td>
+            </tr>
+            <tr>
+              <td class="tg-5muw">나트륨</td>
+              <td class="tg-5muw">30mg(2%)</td>
+              <td class="tg-5muw">지방</td>
+              <td class="tg-5muw">6g(11%)</td>
+            </tr>
+            <tr>
+              <td class="tg-5muw">탄수화물</td>
+              <td class="tg-5muw">11g(3%)</td>
+              <td class="tg-5muw">트랜스지방</td>
+              <td class="tg-5muw">0.1g</td>
+            </tr>
+            <tr>
+              <td class="tg-5muw">당류</td>
+              <td class="tg-5muw">5g(5%)</td>
+              <td class="tg-5muw">포화지방</td>
+              <td class="tg-5muw">3.4g(23%)</td>
+            </tr>
+            <tr>
+              <td class="tg-5muw">단백질</td>
+              <td class="tg-5muw">1g(2%)</td>
+              <td class="tg-5muw">콜레스테롤</td>
+              <td class="tg-5muw">5mg(2%)</td>
+            </tr>
+          </tbody>
+          </table>
+            
+        </div>
+
+
+<!-- jQuery -->
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
