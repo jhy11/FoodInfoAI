@@ -1,3 +1,107 @@
+<!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<!-- Images by various sources under the Creative Commons CC0 license and/or the Creative Commons Zero license. 
+Although you can use them, for a more unique website, replace these images with your own. -->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>제품 상세정보 예측 프로그램</title>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="../static/css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts from Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                
+                <a class="navbar-brand" href="#">
+                	WHAT'S INN
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+							<li>촉촉한 초코칩</li>
+							<li>Enaak</li>
+                            <li>마일드 커피</li>
+                            <li>꼬북칩</li>
+							<li>핫도그 젤리</li>
+                            <li>허쉬 초코우유</li>
+                            <li>오레오</li>
+							<li>빼빼로</li>
+							<li>포카칩</li>
+							<li>Twix</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+                            <li style="color:darkcyan;">소프트웨어학부</li>
+							<li>심다혜</li>
+							<li>김유정</li>
+							<li>정하영</li>
+						</ul>
+					</li>
+                    
+                </ul>
+                
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+
+	<!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>What do you want to know?</h1>
+                <p>Please attach the image and click SUBMIT</p>
+                <form id="upload" action="/predict" method="POST" enctype="multipart/form-data">
+                    <input style="background-color: white; margin-left: 40%; width: fit-content;" type="file" value="Upload" name="image">
+                    <br>
+                    <div class="upload-btn-wrapper">
+                        <button class="btn btn-primary btn-lg">Predict</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+
+
+<!-- jQuery -->
+<script src="../static/js/jquery-1.11.3.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../static/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
+<!--
 <html>
 
 <head>
@@ -19,33 +123,7 @@
                     <button class="btn">이미지 업로드</button>
                     <input type="file" value="Upload" name="image">
                 </div>
-                <input type="submit" value="예측 결과">
-                {%if labe%}
-                    <script>
-                    if(labe == "anaak"){
-                    var ret = window.open("./htmls/anaak.html", "anaak", "width=500, height=600,scrollbars=yes,resizable=yes");}
-                    else if (labe == "chokchok"){
-                    var ret = window.open("./htmls/chokchok.html", "chokchok", "width=500, height=600,scrollbars=yes,resizable=yes");}
-                    else if (labe == "coffee"){
-                    var ret = window.open("./htmls/coffee.html", "coffee", "width=500, height=600,scrollbars=yes,resizable=yes");}
-                    else if (labe == "ggobuk"){
-                    var ret = window.open("./htmls/ggobuk.html", "ggobuk", "width=500, height=600,scrollbars=yes,resizable=yes");}
-                    else if (labe == "hotdog"){
-                    var ret = window.open("./htmls/hotdog.html", "hotdog", "width=500, height=600,scrollbars=yes,resizable=yes");}
-                    else if (labe == "hush"){
-                    var ret = window.open("./htmls/hush.html", "hush", "width=500, height=600,scrollbars=yes,resizable=yes");}
-                    else if (labe == "orangejuice"){
-                    var ret = window.open("./htmls/orangejuice.html", "orangejuice", "width=500, height=600,scrollbars=yes,resizable=yes");}
-                    else if (labe == "oreo"){
-                    var ret = window.open("./htmls/oreo.html", "oreo", "width=500, height=600,scrollbars=yes,resizable=yes");}
-                    else if (labe == "pepero"){
-                    var ret = window.open("./htmls/pepero.html", "pepero", "width=500, height=600,scrollbars=yes,resizable=yes");}
-                    else if (labe == "poka"){
-                    var ret = window.open("./htmls/poka.html", "poka", "width=500, height=600,scrollbars=yes,resizable=yes");}
-                    else (labe == "twix"){
-                    var ret = window.open("./htmls/twix.html", "twix", "width=500, height=600,scrollbars=yes,resizable=yes");}
-                    </script>
-                {% endif %}
+                <input type="file" value="Upload" name="image">
             </form>
         </div>
     </div>
@@ -53,3 +131,4 @@
 </body>
 
 </html>
+-->

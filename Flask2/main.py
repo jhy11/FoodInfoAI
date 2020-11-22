@@ -8,6 +8,10 @@ import keras
 
 import matplotlib.pyplot as plt
 
+import webbrowser
+import urllib.request
+
+
 # 모델 로드
     # ml/model.py 선 실행 후 생성
 from keras.preprocessing.image import ImageDataGenerator, load_img
@@ -48,6 +52,7 @@ def make_prediction():
 
 
         ## Now Predict
+
         predict_dir_path='./temp/'
         onlyfiles = [f for f in listdir(predict_dir_path) if isfile(join(predict_dir_path, f))]
 
@@ -70,47 +75,47 @@ def make_prediction():
             images = np.vstack([x])
             classes = model.predict_classes(images, batch_size=10)
             classes = classes
-            
             if classes == 0:
                 print(file + ": " + 'chockchok')
                 chokchok_counter += 1
-                #webbrowser.open("http://www.daum.net")
+                return render_template('chokchok.html')
             elif classes==1:
                 print(file + ": " + 'coffee')
                 coffee_counter += 1
-            # webbrowser.open("http://www.naver.com")
+                return render_template('coffee.html')
             elif classes== 2:
                 print(file + ": " + 'enaak')
                 enaak_counter += 1
-                #webbrowser.open("http://www.google.com")
+                return render_template('enaak.html')
             elif classes==3:
                 print(file + ": " + 'ggobuk')
                 ggobuk_counter += 1
-            # webbrowser.open("http://www.naver.com")
+                return render_template('ggobuk.html')
             elif classes== 4:
                 print(file + ": " + 'hotdog')
                 hotdog_counter += 1
-                #webbrowser.open("http://www.google.com")
+                return render_template('hotdog.html')
             elif classes==5:
                 print(file + ": " + 'hush')
                 hush_counter += 1
-            # webbrowser.open("http://www.naver.com")
+                return render_template('hershey.html')
             elif classes==6:
                 print(file + ": " + 'oreo')
                 oreo_counter += 1
-            # webbrowser.open("http://www.naver.com")
+                return render_template('oreo.html')
             elif classes== 7:
                 print(file + ": " + 'pepero')
                 pepero_counter += 1
-                #webbrowser.open("http://www.google.com")
+                return render_template('pepero.html')
             elif classes==8:
                 print(file + ": " + 'poka')
                 poka_counter += 1
-            # webbrowser.open("http://www.naver.com")
+                return render_template('poka.html')
             elif classes== 9:
                 print(file + ": " + 'twix')
                 twix_counter += 1
-                #webbrowser.open("http://www.google.com")
+                return render_template('twix.html')
+            
         print("Total chokchok :",chokchok_counter)
         print("Total coffee :",coffee_counter)
         print("Total enaak :",enaak_counter)
@@ -122,7 +127,7 @@ def make_prediction():
         print("Total poka :",poka_counter)
         print("Total twix :",twix_counter)
 
-        return render_template('index.html', label=str(classes))
+        return render_template('enaak.html')
 
 
 if __name__ == '__main__':
