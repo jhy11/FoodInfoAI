@@ -27,6 +27,7 @@ from keras import optimizers
 
 import numpy as np
 from os import listdir
+import os
 from os.path import isfile, join
 from skimage import io
 from keras.preprocessing import image
@@ -75,6 +76,7 @@ def make_prediction():
             images = np.vstack([x])
             classes = model.predict_classes(images, batch_size=10)
             classes = classes
+            os.remove('./temp/'+file)
             if classes == 0:
                 print(file + ": " + 'chockchok')
                 chokchok_counter += 1
@@ -110,7 +112,7 @@ def make_prediction():
             elif classes==8:
                 print(file + ": " + 'poka')
                 poka_counter += 1
-                return render_template('poka.html')
+                return render_template('poca.html')
             elif classes== 9:
                 print(file + ": " + 'twix')
                 twix_counter += 1
