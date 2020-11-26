@@ -145,7 +145,7 @@ if __name__ == '__main__':
     model.compile(loss='categorical_crossentropy', 
                 optimizer=optimizers.Adam(lr=.0004),
                 metrics=['accuracy'])
-    model.load_weights("C:/Users/shims/FoodComponent/CNN_Model.h5")
+    model.load_weights("./model/model.h5")
 
     # Data Augmentation is a method of artificially creating a new dataset for training from 
     # the existing training dataset to improve the performance of deep learning neural network 
