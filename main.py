@@ -57,17 +57,6 @@ def make_prediction():
         predict_dir_path='./temp/'
         onlyfiles = [f for f in listdir(predict_dir_path) if isfile(join(predict_dir_path, f))]
 
-        chokchok_counter = 0 
-        coffee_counter  = 0
-        enaak_counter  = 0
-        ggobuk_counter = 0 
-        hotdog_counter  = 0
-        hush_counter  = 0
-        oreo_counter  = 0
-        pepero_counter  = 0
-        poka_counter = 0 
-        twix_counter  = 0
-
         for file in onlyfiles:
             img = image.load_img(predict_dir_path+file, target_size=(img_width, img_height))
             x = image.img_to_array(img)
@@ -79,57 +68,34 @@ def make_prediction():
             os.remove('./temp/'+file)
             if classes == 0:
                 print(file + ": " + 'chockchok')
-                chokchok_counter += 1
                 return render_template('chokchok.html')
             elif classes==1:
                 print(file + ": " + 'coffee')
-                coffee_counter += 1
                 return render_template('coffee.html')
             elif classes== 2:
                 print(file + ": " + 'enaak')
-                enaak_counter += 1
                 return render_template('enaak.html')
             elif classes==3:
                 print(file + ": " + 'ggobuk')
-                ggobuk_counter += 1
                 return render_template('ggobuk.html')
             elif classes== 4:
                 print(file + ": " + 'hotdog')
-                hotdog_counter += 1
                 return render_template('hotdog.html')
             elif classes==5:
                 print(file + ": " + 'hush')
-                hush_counter += 1
                 return render_template('hershey.html')
             elif classes==6:
                 print(file + ": " + 'oreo')
-                oreo_counter += 1
                 return render_template('oreo.html')
             elif classes== 7:
                 print(file + ": " + 'pepero')
-                pepero_counter += 1
                 return render_template('pepero.html')
             elif classes==8:
                 print(file + ": " + 'poka')
-                poka_counter += 1
                 return render_template('poca.html')
             elif classes== 9:
                 print(file + ": " + 'twix')
-                twix_counter += 1
                 return render_template('twix.html')
-            
-        print("Total chokchok :",chokchok_counter)
-        print("Total coffee :",coffee_counter)
-        print("Total enaak :",enaak_counter)
-        print("Total ggobuk :",ggobuk_counter)
-        print("Total hotdog :",hotdog_counter)
-        print("Total hush :",hush_counter)
-        print("Total oreo :",oreo_counter)
-        print("Total pepero :",pepero_counter)
-        print("Total poka :",poka_counter)
-        print("Total twix :",twix_counter)
-
-        return render_template('enaak.html')
 
 
 if __name__ == '__main__':
