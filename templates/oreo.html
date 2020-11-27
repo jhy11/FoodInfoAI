@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- Template by Quackit.com -->
+<!-- Images by various sources under the Creative Commons CC0 license and/or the Creative Commons Zero license. 
+Although you can use them, for a more unique website, replace these images with your own. -->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>제품 상세정보 예측 프로그램</title>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="../static/css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts from Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      body{
+        background-color: lightblue;
+      }
+        .title {
+          text-align: center;
+          font-size: 2.5rem;
+          font-weight: bold;
+        }
+        .subtitle {
+          text-align: center;
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+        .main {
+          width: 800px;
+          margin: 0 auto;
+          margin-top: 50px;
+        }
+        .tg  {border-collapse:collapse;border-spacing:0;width:50%;margin: auto;
+}
+.tg td{border-color:black;border-style:solid;border-width:1px;
+font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-8ezz{background-color:#003ce9;border-color:#ffcc67;color:#ffffff;font-family:"Arial Black", Gadget, sans-serif !important;;
+  text-align:center;vertical-align:top} 
+.tg .tg-hpco{background-color:#ffcc67;border-color:#ffcc67;font-family:"Arial Black", Gadget, sans-serif !important;;
+  text-align:center;vertical-align:top}
+        </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                
+                <a class="navbar-brand" href="#">
+                	WHAT'S INN
+                </a>
+            </div>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+							<li>촉촉한 초코칩</li>
+							<li>Enaak</li>
+                            <li>마일드 커피</li>
+                            <li>꼬북칩</li>
+							<li>핫도그 젤리</li>
+                            <li>허쉬 초코우유</li>
+                            <li>오레오</li>
+							<li>빼빼로</li>
+							<li>포카칩</li>
+							<li>Twix</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Members <span class="caret"></span></a>
+						<ul class="dropdown-menu" aria-labelledby="about-us">
+                            <li style="color: gold;">소프트웨어학부</li>
+							<li>심다혜</li>
+							<li>김유정</li>
+							<li>정하영</li>
+						</ul>
+					</li>
+                    
+                </ul>
+                
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </nav>
+
+	<!-- Header -->
+    <header>
+        <div class="foodtable">
+            <div class="main">
+                <div class="title">
+                  영양성분표
+                </div>
+                <div class="subtitle">
+                  ()안의 수치는 1일 영양성분 기준치에 대한 비율 (2000kcal 기준)
+                  </div>
+          
+          
+                  <table class="tg">
+                    <thead>
+                      <tr>
+                        <th class="tg-hpco" colspan="4"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoKChYZGBsWGBstJiAlNS8tOC01MDAtLy0tNTAyNS81Li0vLyIiLSIlLSEtISElJSUhJSElISEhISUhKCUfISUBCQYHEA8PFQ8PDxUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVFRUVKBUVFR0VFRUVJSEnHR8lIi4VFSc4JyA3HSUiJf/AABEIAK8BIAMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABAIDBQYHAQj/xAA6EAABAwIDBQcDAgYCAgMAAAABAAIRAyEEMVEFEkFhcQYigZGhsfATMtHB4QcUQmJy8VKCkqIVIzP/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/8QAHxEBAAMAAwEAAwEAAAAAAAAAAAECERITMQNBUXEh/9oADAMBAAIRAxEAPwDsyIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIg8RY7aO06WHZv1TA0zJPIcSua7T7dVXBzaY3Be+buV8mk5QRxzUtOLWsy62i4BU27inkk1XZzmRB6CADAyiFEbjq4gh5ETxIAnPjYE5gZrPNrrfRSL5/w23MSCN2uZAIzkDwMzrKyuD7ZY2mW7x32AZGJd4gF0j5KvI63a0XNMF2/B3W16RBkyRIAHAwZJ5iRlzhbdgu0OFrNc9tQANIbLu7JOWf8Ayi3GxsFdhm1ZhnkRFUEREBERAREQEREBERAREQEREBERAREQEREBERAREQeKNisSykx1R5hrQSfmvCFKXLO3O0y6o3CtNm953M8B4C8cxpaWnIWsbLT9r7UqYus6oZAGTbHdHCxyJNyZEnyWPYy0THnHOJJIB0lGloJAN/8AIn0NslJeAQAbT8suOu/FFpOJNhl69eSpxFG5L8tOHkFJpNF45o5gIF49jfgZt46KmLVPDsBDmiCfD1yV95ADnCxvrJUUmQXzugdI5SCDfgvRU+oGuyAnxtx9bIPKbCe+TB+fn5CtgOJhxmJuLEXtlbr0U0uMaj19BqrDG5kmI8z0QbFgO1GNoh0n6hcBcyd2NBABMWsf7rro2y+1NCu/6YtDN4k2Fo3om8CczoVxs1HOEkX9D+OK9d3d0ON/TyIMdQkXmGZpEvoelVa9oewy03B1V5cQ2R2lrUH0qbiTTbvdywmx4xeCZubACy6bsvtDRrspkkNe+RuTJsTyGYEiQJXSttc7UxsaIi0yIiICIiAiIgIiICIiAiKhzgASSgqRa5j+1ODoyDUlwEw28+P2T1K1PEfxBJ320KPRxPHmMiBoHaKbC46gi4zV7Y415aWua0bsG2Z1veRIgAxZY47bxjhTLsQQaZMHIn/Lg4W4/wBJLVOcNdcu6FwHFUOqtaCSYAz5deS+f6+MqkFn1nFpcH/9tQYkG+X/AGhVvxlUmo41STUgOy7w4A8hHDm3IlZ7Drd7Fdm8G7wkiQJuRxI5Xz5qlmJpuAcHgg2mQQTpPE2y5LgbMY8bpDnS0boMxAg2BzAhxtzKt/zLhugEw07wHAOtcCLO7ovyV7DrfQ+8Lr592zVDsRXeDIL3RxnvGI4G2WjYVL9o1oqn6jhvnedfM8JjrwgWGgWKpEFoJEC9vHksXvrVKYkCrqI6uE+QUh4gSTayhua0ERY6Bu8edyJ9VkaXeYWm0TnAOWiy6LVVtt4WAzPH9lQDv5GeWUrwEkAAxl4+aoDAATEeUjyPsiPCJO5EDRJIFhPjbxRpE75Mkx+35UgkA8j8P5WhHqPeYJEHQT7WvkqKdQREyRwyJ6K4SwGXG/zJUODSO8ydJuR86ILjnEmYzjWR52PRWnb5LS68TqCdEc6Dd9jF7EeBF/NXnGb8LXyQeuZui5k36ZXj9lXhHupljwd0iYPEW9czmqBBIvIE24jpwPVA5o3iTIHy0/P6kG/7B7WGmGUK3ekn/wCxz8gTzBmL8Rkuj4bE06rQ+m4ObqDIXzjhjvA23c+c6TyWf2Tt+thXNgk02yTTmxmbgweNwb5Ldbudqfp3lFjNmbTp4im2owi4mJBI6xkVk1tzEREBERAREQF4i5f2v7QOLnYak6Gts45EmftBjIR3ozmOF5acWsaze2O2dGiSykPqOGn2jxzJ5AeK5vj9rYnEkfWeY4NFvMC0c7lY1z4mBcdVTTMAAmY8B4lYtbXStcGtaJtlEcevTghkZXPoFee8EAm3lb1VDiCHXkjI39lltclxAOvC3wrx0jmrLpAGpm3EdeSqDzEAQR6/LoPWAmZN1SIHD2A97r1wmOH6fPHJUl5FwZAm8GfAoLgFpzBn38+itETyPgrAL85kHqI6kGZV8AkWMH5r+qC1Ws1wFj58eEKDQqH7Iv8AJUurTcO7kSPDzWIqEtO9xHzyQZoPhpEwDpEnpKU37hBiGnV1z0ByhRqNUEAg300V4Ak2Ac4/1G8eCyMiGA8e6Y/aPRRqhlwA7w/XgNOCtUjJLJ3pzMWCns3gM5HjPhr1595aFipUZECCRzCsuqtAyluufSQLgjUaby8dggSCBB1FidZVVQxujIH8Wjx10QVUq7YDnZGwdr10M+B9Fce24ccvmR8l6TDXNIkW6Z8R1zzUamHgEDI/0mYH+J4C3PNB5Va6Q0iRacjNuOqpAcDYwBwsR4jMZ5ql9Z4JZHhk4eGR6hSqJcd2RbXIjqPwUFTWTcAHkePTmrbQTMCB7dbaqnEAizfyB4WV5r8gR3ve951vF8/JBVYCOHv8ureFqEyS3Kfe3VW3EkOaRafEa+2a8rPcLAb2uYOfCVUZLZO0a2FqCrRAg2cDkbyYjKYF13DZe1KWJp/VpEkXFxEHQ+fCQvn5jiN0kWtp6rJbL2i/B1m1mAuZeW7xANuOYtMt6BWs4zeuvoRFGw2IZUY2owy1wmVJXRyEREBERBaqPgOOi+cQXVHlxN7nrrOQ46vX0VijFN55H2Xz02xIAknoI87AZLH1dPk9JuREzw91TSaIcZk+HjnlwV3dkTHvboqXM/qGfusOil5ceEgcP95KggQOBHqq2l5dcW8yOoKkVGuneImJ/aeCCEWnPMafM1c37xkfEA+aB7iJIj0PkM+iA5AGJ+WQHZtgTz/ZVAXLoz4afLKzUoxJcJGn5gFWmsIG6A0gxbKLXmxnXzQWa1YgkQAL/wBQEeShNrQWuImJy3jPQmynOotAiwjOIA9s1RUqNcx26YIm+vjlylKoinEueQ+IA8dJtwy9Vfrt3hvAZ/PBRcOxop7pzPnnw8oUmm6xBHVLFZYulWLHHgD8/X1WYDpAAMD3UDEUfP36LzZ93BjjAPHgDz5HLyQ8ZZneADjuMHmVepvtfutE2vP5Uavh3NcA8RHkdI1CpYQd5zzOnn6IrI0gYLt+QYvxHVUuY0DfIHXh7W8bKP8AVeBvuyMjdsY0B53UgVQGCBOXd4/uEFuo+GhxO6B4A9ReZVZxANMPaJJ6COqpcGVA0TYfL68fwvWgEh0QBP7W19c0ESKpgEAjyItwPBSAHsAIdvZWNj4EW8wn1gQ4xOdsp+cwotOmR3yIAnu5g6W1QTKmIB+5padfzEiOuqtioxokuk+ZPQcFS5rmiGkAnOZA8AfllXTY1uQE2vYz+qCimwkOcRAPpopDXXIiRrl5ei9eIE5zpkFbLgAN+w8h46HggqDXEyTb5mclXUAJbNwZ+DqF42ACAZBmxv0i0+eqstBG7N4i/wC+aDpPYLa5cHYR5+2S23Ce9lzcCJ1OfDpi+dsPinUatOs3NpBy0zkiHxGeY5L6Ha4EAhdKS4/SMlWiItMiIiC24Aggrg3aPYzqFUtcbHvA6ibTzzkesLvq4Z25xDhjXz9oDRHhPuSs38b+XrXRVJME2HjNrzwACujENORkDzPQac1BoYlrhYw4TbI58NbKsndJOnr8vC5uuphMkkGCPEePPzyUkTpJ8x5HLlKxodeCLD166/OircQbTBMTr6IJLm3IyPjHpn0VLd/NxaY4gn2OXRUPqEBxHgNb8V41xJjhFz/s6BZHlakXMcAYJj3v06K1Tw7gGjTpfrCuirLQ7cEmPnlCqeZO4LC176fsVoW6gMucZcDGgHO5ubKI5xuCwgGb2MdNRqr1KsWtIuQZ4jxiLjVel33Ei/mDa2fUCyIxr6hY1rSZOmc/gqx/NA1DAuYtn1WRrNYS10SD89vZQHgAEgQWnxP+wVUlPBkQTYen7LGYmkb2/wBqVRqg2BUktDoB4cdbLPi+pGy9oMqBuHxGQ+13EaAn9fByqx2CdScJu05HgeuhCwOIwxByWZ2ftyB9GuN5nmR11HPMKp4ttrNB3yJPpz9LK7vkAvN3nIcB+wH6rK19jNcN+g6R/wAfwZ91gzv0zcQRwOfkUWspZ3ZawjvkDQA6THFVNLmRcuFtDF9YB1zlR2VgAXk98/BkqgS0NYwySc9OvBFSq1NzjvA+9+s5lWjWe4bpGR5zyzvyVdR4JcDcNvPh+fZXCS4S0wTymfx6oPaLCC4i2vK3PPorFHcJ3yCCeOmnoqS+qLFoI8l4KzXn6ZBAPlyQXTBIE31Eg+RsR1V1tOSQSDbpPXn+6t06DWndFj5+6pfWYLEydM/VApZ2ED3vwCrrAghnH2vZWqdST9sBSCAO8c/fqUFmo4G05eHrwzz/AOrl9CbLn6FHez3G877om/6rguycD/M4qnSIzN8wd3+rpYEEcwV9DtAAgLfycvrKtERbYEREBch7f7Pmu1/B7R4lpv6OauurA9odk/zNBzGwHi7ToeuhFvI8FLRsLWcl8016JByhXKeNeBBG9zy8zxWZr0ZJY4QRIjIi156GVjK2Gta4Hy65uv8AFIx7HC9j84qa5pjeFwY6eYWAqYcjoF7QxNSme44j9fA2VyJZ2YZveNr/AJ5qltZwyK9o9o3D/wDSm13v+qyrNvYN4ipTg9B7hTivNjTWda9lWMU6+p+ZLMNq7PcDcDxIPqVdFLAEWNv8j+VE5tdNazRGSOruJKy9QbPH9f8A7T7eyop1sB90zyJPsqvNrznEAXiFV/JVXFxDCQeMGD4xdbE7b2EZ9rZ6N/MKBie1biCGMjmfx+6tYlm1mP8A/jqjAHO7oHGYVxldrpg2Hl85rC4nGVKhl5n5oooK1wTk2wVZG6RI145LHV8LmQZHzNW6GOkOL+SyLXEZGAVi0Y3WdY/CbQrUD3HQNOB8Pwtvw+0cNiwG1Ruv8j4HiOS1l1NhzEfNSse/CuFxkiWhtlfYVQSWQ8DwPkf0KxNSm9phwII1sR5q1gtu4ijYHeHO/kc/dbRS7S4asAyu2Dz4dDw9ENa22oQHQc/W+vipLcRdtvt4e/sFmnbCpvG9Rqz1iD4gfooVXYWIaZDd4coPpn6KNahU6xIcZzOXzmpD6wJeIyj4NVjSxwAabFVSZcVV1lXOEm3Dr1+dF4SwXjQ8L65dfZQGEgi+Xz9FUN4lpJ1+R4FQ1O/mA024dZP+vgUYvJJDRrbhy5BUtpkgE6fPSVm+zuHZUxdKnu7wmTpGZnUCBI6tTDW/9idh/SYcS8d5+Q0ba/8A2gHoBqt/SF6utYxxmdERFUEREBERBpPaTsmzEzWpdyref77WBvAP93nPDkGMwdag/crsLHkag+RBIPgV9KKNicKyqx1Oo2WusRqFJhYl80uLe9I04q26jTJPD5quwbR/h9h37zqDzTcYtYsHQRvX/wAitPxvYnG03P3Wh7Gid4GCbXAbJdvTNrzrNliaN1u0h2zmH7So7tnFZutszEUzSY+k5rqn2tjvG+mYMjI3uLXUMCzjFhF+A0nSd09YOimSv+MY7Zj84sqHbPeMxCzW4+d2DOcXmInLOI70/wDHvZKgl8B141vB15E3HmE5SZDDDAPPBHYJwGSzbqNQFzS0y37hBlusgiQAYF8rIMLVJptDDNT7bWdeO6eN7WTZMhgxgnRKjupQYlbQ3ZWJc17203ENcGOsSQ7QgCbRBtaQ3iFmsL2Cxz3lhYGQAZce6dAC2ZOYNrR0nVZlm0Q0BtLUWVf0RxsuyYL+GIsa9c5XDBkeTnTIH+Anktz2R2TweFgsp7zx/W67j6bo0sBZXJTYcT2H2NxWLLXBu5TN990wR/aLF08rc10+h/DnCtp7pqPL7d6RMAZNEQGmeO8bC66JC9VxNcN232Pr06ld9NkUKY3gSZkBt4zdvSDmAOeU6VdoBix48DrEr6jc0EEEWKwO0ezOFxBp/UZAp5NHdbGhA4SJtCk0WLvnJ1Np4X9FHfgzEjJdJ2n2Gr02Vaze9Du6xgLiWknhEyAftAPG9lqWN2dVoPFOq3deQHRMmOcdDvaQs41rXAHtMglp5SPZZGhtvEsiKhPI397q8QCDIkBWThmkDgShi5W2/iKgh5a6NQLeIWPONqRYx5Kb/JC91bGDEwiYj08c8SDf0Kuux9U2EDwn3lSG4IQJtzUgYZoF+SKisD3fc6eXDyFl27sJsP6FE13jv1MuTeH/AJG/QNWB7LdkDUIr4hhawXDDYu/yBvucj9/TPrYELVY/LNpVIiLTIiIgIiICIiAiIgIiILZYJBi6xtXYuFcx1M0W7rjvEAQC7UxF+fVZZEGNGy8OKn1hTG/G7P8AbpGWVssrZKyNh4UMZT+k3dY7faIydMz68VmEQQRgKIdUf9MTUADjH3CIvqItCqZgaQFNoYAKf22HdtHd0taymIgttYBMDNXERAREQEREBERAUarhqb53mgyC2+hzE5wZyUlEGjY3sHg3spspzT3STIuXA8CXSTEWmYva6weL/hyS6o6lWgf0tImNd4jhoQ2cs4v1VFMXXGKn8O8WCA2owiJ4jvaRBkf3WzNtaaX8PcYS3eewA53cSNIECZ6iF2lEw1yjC/w5cd016/Ay1osDNoLs2gZy0ErctmdlsJhyHsZvPEd53eMjiJs0nMloC2VEw0REVQREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREH//Z" alt="Image" width="300" height="200"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-hpco" colspan="4">1회 제공량 50g</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-hpco" colspan="4">열량 250kcal</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-8ezz">영양성분</td>
+                        <td class="tg-8ezz">함량</td>
+                        <td class="tg-8ezz">영양성분</td>
+                        <td class="tg-8ezz">함량</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-hpco">나트륨</td>
+                        <td class="tg-hpco">200mg(10%)</td>
+                        <td class="tg-hpco">지방</td>
+                        <td class="tg-hpco">11.5g(21%)</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-hpco">탄수화물</td>
+                        <td class="tg-hpco">35g(11%)</td>
+                        <td class="tg-hpco">트랜스지방</td>
+                        <td class="tg-hpco">0g</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-hpco">당류</td>
+                        <td class="tg-hpco">19g(19%)</td>
+                        <td class="tg-hpco">포화지방</td>
+                        <td class="tg-hpco">6.5g</td>
+                      </tr>
+                      <tr>
+                        <td class="tg-hpco">단백질</td>
+                        <td class="tg-hpco">2g(4%)</td>
+                        <td class="tg-hpco">콜레스테롤</td>
+                        <td class="tg-hpco">0mg</td>
+                      </tr>
+                    </tbody>
+                    </table>
+        </div>
+
+
+<!-- jQuery -->
+<script src="../static/js/jquery-1.11.3.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../static/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+</html>
