@@ -1,4 +1,4 @@
-# FoodInfoAI
+# FoodInfoAI: What's Inn
 Showing food info with food recognition AI 
 
 <img src="https://user-images.githubusercontent.com/65180905/100415496-9fa1cd00-30bf-11eb-8f42-b78e98aba60e.png" width="600" height="300">
