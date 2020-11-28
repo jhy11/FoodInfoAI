@@ -33,7 +33,7 @@ Showing food info with food recognition AI
  ```
  python main.py
  ```
- 6. Enter 127.0.0.1:[Port Number] in the Chrome Address window when the server is finished running and the port number is given.
+ 6. Enter 127.0.0.1:5000 in the Chrome Address window when the server is finished running and the port number is given.
  7. Choose one of the products listed below and take a photo of the product
  8. Upload the photo
 
