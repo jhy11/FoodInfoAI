@@ -49,12 +49,12 @@ def make_prediction():
         # 업로드 파일 처리 분기
         file = request.files['image']
         if not file: return render_template('index.html', label="No Files")
-        file.save('./temp/'+file.filename)
+        file.save('./data/'+file.filename)
 
 
         ## Now Predict
 
-        predict_dir_path='./temp/'
+        predict_dir_path='./data/'
         onlyfiles = [f for f in listdir(predict_dir_path) if isfile(join(predict_dir_path, f))]
 
         for file in onlyfiles:
@@ -65,7 +65,7 @@ def make_prediction():
             images = np.vstack([x])
             classes = model.predict_classes(images, batch_size=10)
             classes = classes
-            os.remove('./temp/'+file)
+            os.remove('./data/'+file)
             if classes == 0:
                 print(file + ": " + 'chockchok')
                 return render_template('chokchok.html')
