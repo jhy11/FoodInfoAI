@@ -46,12 +46,6 @@ Showing food info with food recognition AI
 <img src="https://user-images.githubusercontent.com/65846779/99939879-6ced9100-2dae-11eb-922b-00aec128a230.PNG" width="800" height="520">
 
 
-## How it is made 
- machine learning
- ```
- cd
- ```
-
 ## License
 MIT
 
