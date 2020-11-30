@@ -8,6 +8,9 @@ Showing food info with food recognition AI
  These are the cases when you might need this
  1. Poor readability of nutrition facts
  2. Nutrition facts NOT written on the individual packaging
+ 
+##시연 영상url
+https://youtu.be/S1JcY2UUPfI
 
 
 ## Development Environment
