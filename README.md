@@ -3,14 +3,14 @@ Showing food info with food recognition AI
 
 <img src="https://user-images.githubusercontent.com/65180905/100415496-9fa1cd00-30bf-11eb-8f42-b78e98aba60e.png" width="600" height="300">
 
+## 시연 영상url
+https://youtu.be/S1JcY2UUPfI
+
 ## About
 
  These are the cases when you might need this
  1. Poor readability of nutrition facts
  2. Nutrition facts NOT written on the individual packaging
- 
-##시연 영상url
-https://youtu.be/S1JcY2UUPfI
 
 
 ## Development Environment
